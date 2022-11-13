@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Pattaya');
+
+$background_img: url('./assets/background.svg');
+$fontFamily: 'Pattaya';
+
+body {
+    font-family: $fontFamily;
+    background-image: $background_img;
+    overflow-x: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 100;
+}

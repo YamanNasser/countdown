@@ -1,0 +1,80 @@
+$primaryColor: #96c5fd;
+$textColor: #fefffb;
+$btnColor: #ee1a25;
+
+.font {
+    font-weight: bold;
+    text-align: left;
+    font-weight: inherit;
+}
+
+.header-container {
+    .content {
+
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.home-container {
+
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-column: 10em;
+
+    .main-content {
+
+        width: 500px;
+        float: right;
+
+        h1 {
+            font-size: xxx-large;
+            color: $primaryColor;
+            @extend .font;
+        }
+
+        p {
+            font-size: x-large;
+            color: $textColor;
+            @extend .font;
+        }
+    }
+
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    div {
+        padding: 10px;
+    }
+}
+
+
+
+@media (max-width:950px) {
+
+    .home-container {
+        display: block;
+        text-align: center;
+
+        .main-content {
+            width: auto;
+
+            h1 {
+
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}

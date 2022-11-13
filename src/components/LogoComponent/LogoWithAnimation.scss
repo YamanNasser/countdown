@@ -1,0 +1,43 @@
+$default_height: 140px;
+
+.rocket-container {
+
+    img {
+        height: $default_height;
+    }
+
+    animation: wobble-bottom-animation 3s linear 0s infinite normal none;
+}
+
+@keyframes wobble-bottom-animation {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+        transform-origin: 50% 100%;
+    }
+
+    10% {
+        transform: rotate(2deg);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: rotate(-4deg);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: rotate(4deg);
+    }
+
+    80% {
+        transform: rotate(-2deg);
+    }
+
+    90% {
+        transform: rotate(2deg);
+    }
+}
